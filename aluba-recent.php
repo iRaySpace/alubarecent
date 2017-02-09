@@ -22,7 +22,7 @@ class AlubaRecentWidget extends WP_Widget
 		$dis_posts = esc_attr($instance['dis_posts']);
 		
 		// add the admin panel
-		require('admin/alubarecent-admin.php');
+		require('admin/aluba-recent-admin.php');
 
 	}
 
@@ -39,7 +39,7 @@ class AlubaRecentWidget extends WP_Widget
 		if ($title)
 			echo $before_title . $title . $after_title;
 
-		require('public/alubarecent-public.php');
+		require('public/aluba-recent-public.php');
 
 		echo $after_widget;
 
